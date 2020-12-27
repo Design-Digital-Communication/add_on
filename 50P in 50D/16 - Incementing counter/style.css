@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/* box-sizing so padding or margin wont affect the actual size.*/ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(167, 209, 89);
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 35px;
+    text-align: center;
+}
+
+.counter {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+@media(max-width: 590px) {
+    body {
+        flex-direction: column;
+    }
+}
